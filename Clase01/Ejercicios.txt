@@ -1,0 +1,15 @@
+Ejercicio 1
+---------------------------------------
+Desarrollar un programa para encontrar
+el numero mayor de un arreglo de 5 
+elementos que debe ingresar el usuario.
+
+
+Ejercicio 2
+---------------------------------------
+Desarrollar un programa que les las notas
+de un estudiante, son 5 notas.
+Luego de calcular su promedio, solo se
+promedian las 4 mejores notas.
+
+
