@@ -1,29 +1,25 @@
-![FUNDAMENTOS DE PROGRAMACIÓN CON JAVA](https://raw.githubusercontent.com/gcoronelc/JAVA-FUND-001/main/IMG/fdp.png)
+![FUNDAMENTOS DE PROGRAMACIÓN CON C++](https://raw.githubusercontent.com/gcoronelc/CEPSUNI-CPP-55797/main/img/portada.png)
 
-# PROGRAMADOR JAVA
+# DATOS GENERALES
 
 - Lugar: CEPS-UNI
-- Horario: Martes y Jueves de 19 - 22 Horas
-- Inicio: 12.NOV.2020
+- Horario: Lunes, Miercoles y Viernes de 19 - 22 Horas
+- Inicio: 21.MAY.2021
 - Duración: 24 Horas
 - Dirección: https://goo.gl/maps/6JRfgrEPkLYR4AVn6
-- Youtube: https://n9.cl/gcoronelc-fdp-java
-- Página: http://gcoronelc.blogspot.com/p/java.html
-- Código fuente: https://goo.gl/GRaOQg
-- WS del Curso: https://chat.whatsapp.com/JPzeGd3tIkpBpS2kRDr61n
-
+- Curso Online: https://n9.cl/gcoronelc-cpp
+- Correo para el curso: egcc.uni@gmail.com
 
 # DOCENTE
 
-- Docente: CORONEL CASTILLO ERIC GUSTAVO
+- Docente: ERIC GUSTAVO CORONEL CASTILLO
 - Blog: www.desarrollasoftware.com
-- Correo para el curso: egcc.uni@gmail.com
 - Canal Youtube: https://www.youtube.com/DesarrollaSoftware
-- Cursos Virtuales: https://gcoronelc.github.io/
-- Facebook 1: https://www.facebook.com/groups/universidadjava/
-- Facebook 2: https://www.facebook.com/groups/desarrollasoftware/
+- Cursos Virtuales: http://gcoronelc.github.io
+- Facebook 1: https://www.facebook.com/groups/universidadjava
+- Facebook 2: https://www.facebook.com/groups/desarrollasoftware
 - Facebook 3: https://www.facebook.com/groups/bolsa.sistemas/
-- Grupo de WS de Java: https://chat.whatsapp.com/H6BBebNDZHEAqAk6gTU5ZS
+- Grupo de WS de Programación: https://chat.whatsapp.com/H6BBebNDZHEAqAk6gTU5ZS
 
 
 # YUTUBE
@@ -38,22 +34,6 @@
 - WS SOAP EJEMPLO 1: https://bit.ly/2Rd7osH
 - WS SOAP EJEMPLO 2: https://bit.ly/39PalrT
 
-
-# RECURSOS DEL CURSO
-
-- Recursos: https://github.com/gcoronelc/recursos
-- Imagenes: https://github.com/gcoronelc/imagenes
-- Separata: http://gcoronelc.blogspot.pe/2016/06/separata-java-orientado-objetos.html
-- Lección 00: http://gcoronelc.blogspot.com/2019/12/netbeans-82.html
-- Lección 01: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-01.html
-- Lección 02: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-02.html
-- Lección 03: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-03-sobrecarga.html
-- Lección 04: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-04-alcance-de-clase-y.html
-- Lección 05: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-05-herencia.html
-- Lección 06: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-06-interfaces.html
-- Lección 07: http://gcoronelc.blogspot.pe/2013/09/java-poo-leccion-07-arreglos.html
-- Lección 08: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-08-colecciones.html
-- Lección 09: http://gcoronelc.blogspot.pe/2014/04/java-poo-leccion-09-excepciones.html
 
 
 # CURSOS VIRTUALES
@@ -81,26 +61,6 @@
 [![JAVA JDBC CON BASE DE DATOS ORACLE](https://raw.githubusercontent.com/gcoronelc/UDEMY/master/cursos/jdbc.png)](http://www.youtube.com/watch?v=MR53Xgeg28Y "JAVA JDBC CON BASE DE DATOS ORACLE")
 
 
-
-
-# RECURSOS RECOMENDADOS
-
-- Recursos de Java: http://gcoronelc.blogspot.pe/p/java.html
-- Repositorio de curso Java: https://github.com/gcoronelc/PECI-Java-MAR-2015
-- Repositorio de curso Java: https://github.com/gcoronelc/SISTUNI_PROG_JAVA_001
-- Repositorio de curso Java: https://github.com/gcoronelc/SISTUNI_PROG_JAVA_002
-- Repositorio de curso Java: https://github.com/gcoronelc/SISTUNI_PROG_JAVA_003
-- Repositorio de curso Java: https://github.com/gcoronelc/SISTUNI_PROG_JAVA_004
-- Repositorio de curso Java: https://github.com/gcoronelc/CEPSUNI_JAVA_OO_002
-- Repositorio de curso Java: https://github.com/gcoronelc/CEPSUNI_JAVA_OO_001
-- Desarrolla Software: https://www.facebook.com/groups/DesarrollaSoftware
-- Universidad Java: https://www.facebook.com/groups/universidadjava/
-- Proyectos y Procesos: https://www.facebook.com/groups/ProyectosProcesos/
-- Recorrido de un arreglo: http://gcoronelc.blogspot.pe/2015/03/java-8-loop-through-array.html
-- Recorrido de un arreglo: http://gcoronelc.blogspot.pe/2016/12/java-recorrido-de-un-arreglo_19.html
-- Recorrido de una lista: http://gcoronelc.blogspot.pe/2016/12/java-recorrido-de-una-lista.html
-- Interfaces Funcionales: http://gcoronelc.blogspot.pe/2015/03/java-8-functional-interfaces.html
-- Código fuente: https://goo.gl/GRaOQg
 
 # EXTRA
 
