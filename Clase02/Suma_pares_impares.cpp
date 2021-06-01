@@ -26,7 +26,8 @@ int main(){
 	// Inicializar la semilla
 	srand(time(NULL));
 	
-	int arreglo[10], suma_pares, suma_impares;
+	// int arreglo[10], suma_pares, suma_impares;
+	int suma_pares, suma_impares;
 	
 	for( int i = 0; i < 10; i++ ){
 		arreglo[i] = miRand(i);
