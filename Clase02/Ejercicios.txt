@@ -13,3 +13,12 @@ Luego de calcular su promedio, solo se
 promedian las 4 mejores notas.
 
 
+Ejercicio 3
+-------------------------------------------
+Desarrollar un programa que genere 10 
+numeros aleatorios en un arreglo, y luego
+encuentre la suma de pares e impares.
+
+
+
+
