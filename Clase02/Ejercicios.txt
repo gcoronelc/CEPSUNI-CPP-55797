@@ -18,6 +18,7 @@ Ejercicio 3
 Desarrollar un programa que genere 10 
 numeros aleatorios en un arreglo, y luego
 encuentre la suma de pares e impares.
+Rango: 30 y 50
 
 
 
