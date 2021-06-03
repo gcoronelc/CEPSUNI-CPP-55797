@@ -1,0 +1,48 @@
+Ejercicio 1
+---------------------------------------
+Desarrollar un programa para encontrar
+el numero mayor de un arreglo de 5 
+elementos que debe ingresar el usuario.
+
+
+Ejercicio 2
+---------------------------------------
+Desarrollar un programa que lea las notas
+de un estudiante, son 5 notas.
+Luego de calcular su promedio, solo se
+promedian las 4 mejores notas.
+
+
+Ejercicio 3
+-------------------------------------------
+Desarrollar un programa que genere 10 
+numeros aleatorios en un arreglo, y luego
+encuentre la suma de pares e impares.
+Rango: 30 y 50
+
+Ejercicio 4
+-------------------------------------------
+Desarrollar un programa que permita a un
+profesor gestionar las notas de sus estudiantes.
+El programa debe tener un menú con las siguientes
+opciones:
+
+1.- Registro de estudiante y notas
+2.- Listado de estudiantes
+3.- Reporte estadistico
+4.- Salir
+
+Reporte estadistico:
+--------------------------------------
+- Porcentaje de aprobados
+- Porcentae de desaprobados
+- Media del promedio final
+- Mediana del promedio final
+- Desviación estándar
+
+
+
+
+
+
+

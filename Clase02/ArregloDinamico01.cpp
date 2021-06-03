@@ -1,4 +1,4 @@
-// Arreglo dinamico
+// Arreglo dinamico.
 // El tamaño del arreglo se define en tiempo de ejecución del programa.
 // Leer "N" numeros y mostrar el mayor y menor.
 
@@ -7,7 +7,7 @@ using namespace std;
 
 int main(){
 	
-	// Configuracion
+	// Configuración
 	setlocale(LC_CTYPE, "Spanish");	
 	
 	// Variables

@@ -1,0 +1,11 @@
+﻿
+Sistema de Calificación
+--------------------------------
+- 4 Practicas Calificadas
+- 1 Examen Final
+
+
+PP = ( pc1 + pc2 + pc3 + pc4 - MenorPC ) / 3
+PF = ( PP + EF ) / 2
+
+
