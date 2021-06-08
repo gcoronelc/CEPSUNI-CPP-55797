@@ -23,7 +23,7 @@ int main(){
  
 	cout << endl << endl;
 	cout << "Número 1: " << num1 << endl;
-	cout << "Número 2: " << num1 << endl;
+	cout << "Número 2: " << num2 << endl;
 	cout << "Cadena: " << cadena << endl;
 	cout << endl;
  

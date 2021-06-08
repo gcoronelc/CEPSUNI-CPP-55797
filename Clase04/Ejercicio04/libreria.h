@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 // Variables Globales
@@ -6,24 +6,7 @@ int tamanio = 100, contEstudiantes = 0, opMenu;
 string estudiantes[100];
 int notas[100][7];
 
-void procMenuV1(){
-	system("cls");
-	cout << "SISTEMA ACADEMICO" << endl;
-	cout << "============================================" << endl;
-	cout << "1.- Registro de estudiante y notas" << endl;
-	cout << "2.- Listado de estudiantes" << endl;
-	cout << "3.- Reporte estadistico" << endl;
-	cout << "4.- Salir" << endl;
-	do{
-		cout << endl;
-		cout << "Opción: "; cin >> opMenu;
-		if(opMenu < 1 || opMenu > 4){
-			cout << endl;
-			cout << "Opción incorrecta." << endl;
-		}
-	} while(opMenu < 1 || opMenu > 4);
-}
-
+// Menu de opciones
 void procMenu(){
 	do{
 		system("cls");
@@ -38,6 +21,7 @@ void procMenu(){
 	} while(opMenu < 1 || opMenu > 4);
 }
 
+// Proceso registrar estudiante
 void procRegistrarEstudiante(){
 	system("cls");
 	cout << "REGISTRAR ESTUDIANTE" << endl;
@@ -64,38 +48,3 @@ void procRegistrarEstudiante(){
 }
 
 
-
-
-int main(){
-	
-	// Configuracion
-	setlocale(LC_CTYPE, "Spanish");
-	
-	// Proceso General
-	do{
-		procMenu();
-		switch(opMenu){
-			case 1:
-				procRegistrarEstudiante();
-				break;
-			case 2:
-				cout << endl;
-				cout << "NOMBRE\tPC1\tPC2\tPF" << endl;
-				cout << "----------------------------------------------" << endl;
-				cout << "Gustavo\t18\t20\t19" << endl;
-				cout << "Karla\t15\t17\t16" << endl;
-				break;
-			case 3:
-				cout << "Opcion 3" << endl;
-				break;
-			case 4:
-				cout << "Opcion 4" << endl;
-				break;											
-		}
-		cout << endl;
-		system("pause");
-	} while(opMenu != 4);
-	
-	system("pause");
-	return 0;
-}
