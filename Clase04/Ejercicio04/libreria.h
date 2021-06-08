@@ -48,3 +48,46 @@ void procRegistrarEstudiante(){
 }
 
 
+void procListado(){
+	system("cls");
+	cout << "LISTADO DE ESTUDIANTES" << endl;
+	cout << "============================================= " << endl;
+	cout << endl;
+	cout << "NOMBRE\tPC1\tPC2\tPC3\tPC4\tPP\tEF\tPF" << endl;
+	cout << "----------------------------------------------" << endl;
+	for(int i=0; i<contEstudiantes; i++){
+		cout << estudiantes[i];
+		for(int j=0; j<=6; j++){
+			cout << "\t" << notas[i][j];
+		}
+		cout << endl;
+	}
+	cout << "----------------------------------------------" << endl;
+	cout << endl;
+}
+
+
+void procEstadistico(){
+	// Variables
+	int contAprobados=0;
+	double porcAprobados, porcDesaprobados, sumaPromedio=0.0;
+	double mediaPromedio, medianaPromedio, dsPromedio;
+	// Proceso
+	for(int i=0; i<contEstudiantes; i++){
+		contAprobados += (notas[i][6]>=14?1:0);
+		sumaPromedio += notas[i][6];
+	}
+	porcAprobados = contAprobados * 100.0 / contEstudiantes;
+	porcDesaprobados = 100 - porcAprobados;
+	mediaPromedio = sumaPromedio / contEstudiantes;
+	// Reporte
+	system("cls");
+	cout << "REPORTE ESTADISTICO" << endl;
+	cout << "==================================" << endl;
+	cout << "Porcentaje de aprobados: " << porcAprobados << "%" << endl;
+	cout << "Porcentaje de desaprobados: " << porcDesaprobados << "%" << endl;
+	cout << "La media es: " << mediaPromedio << endl;
+	cout << endl;
+	
+}
+

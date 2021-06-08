@@ -1,13 +1,15 @@
 #include <iostream>
+#include <string>
+#include <windows.h>
 #include "libreria.h"
 using namespace std;
-
 
 
 int main(){
 	
 	// Configuracion
 	setlocale(LC_CTYPE, "Spanish");
+	SetConsoleTitle("EJERCICIO 4");
 	
 	// Proceso General
 	do{
@@ -17,14 +19,10 @@ int main(){
 				procRegistrarEstudiante();
 				break;
 			case 2:
-				cout << endl;
-				cout << "NOMBRE\tPC1\tPC2\tPF" << endl;
-				cout << "----------------------------------------------" << endl;
-				cout << "Gustavo\t18\t20\t19" << endl;
-				cout << "Karla\t15\t17\t16" << endl;
+				procListado();
 				break;
 			case 3:
-				cout << "Opcion 3" << endl;
+				procEstadistico();
 				break;
 			case 4:
 				cout << "Opcion 4" << endl;
