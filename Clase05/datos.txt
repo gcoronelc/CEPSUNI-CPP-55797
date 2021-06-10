@@ -1,0 +1,10 @@
+Este es un ejemplo de archivo.
+Esto se pone bueno.
+Ahora todos mis datos iran a archivos.
+--------------------------------------------
+Los archivos permiten persistencia de datos.
+Me parece excelente.El peru esta primero
+
+Peru 2 - 1 Ecuador
+Ganamos con Autoridad.
+Guerrero ya fue.
