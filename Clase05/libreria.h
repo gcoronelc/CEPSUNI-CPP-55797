@@ -86,6 +86,7 @@ void procListado(){
 
 
 void procEstadistico(){
+	
 	// Variables
 	int contAprobados=0;
 	double porcAprobados, porcDesaprobados, sumaPromedio=0.0;
@@ -125,5 +126,5 @@ void procEstadistico(){
 	cout << "La media es: " << mediaPromedio << endl;
 	cout << "La mediana es: " << medianaPromedio << endl;
 	cout << endl;
+	
 }
-
