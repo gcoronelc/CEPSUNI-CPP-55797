@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include <windows.h>
 #include "libreria.h"
 using namespace std;
@@ -12,9 +13,13 @@ int main(){
 	SetConsoleTitle("EJERCICIO 4 CON ESTRUCTURAS");
 	
 	// Inicializar variables
+	nombArchivo = "Estudiantes.TXT";
+	contEstudiantes = 0;
 	
 	
 	// Proceso General
+	crearArchivo(); // Asegura la existencia del archivo
+	leerArchivo();  // Se asugura que el archivo de texto no se ve bien.
 	do{
 		procMenu();
 		switch(opMenu){

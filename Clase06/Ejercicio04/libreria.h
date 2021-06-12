@@ -1,4 +1,6 @@
 #include <iostream>
+#include <sstream>
+#include <fstream>
 using namespace std;
 
 // Tipos
@@ -11,6 +13,7 @@ struct Estudiante{
 	int promPracticas;
 	int examenFinal;
 	int promFinal;
+	string estado;
 };
 
 // Variables Globales
@@ -19,10 +22,45 @@ Estudiante lista[100], regActual;
 string nombArchivo;
 
 /* Proceso que crea el archivo. */
+/* El objetivo es asegurar que el archivo exista. */
 void crearArchivo(){
-	
+	// Abrir archivo
+	ifstream archivo1;
+	archivo1.open(nombArchivo,ios::in);
+	// Validar
+	if(archivo1.fail()){
+		// Crear el archivo
+		ofstream archivo2;
+		archivo2.open(nombArchivo,ios::out);
+		archivo2.close();
+	} else {
+		archivo1.close();
+	}
+
 }
 
+// Proceso se encarga de leer el archivo y cargarloa al arreglo
+void leerArchivo(){
+
+	ofstream archivo;
+	
+	// Grabar en archivo
+	archivo.open("datos.txt",ios::app);
+} 
+
+// Proceso agregar registro actual al archivo
+void grabarRegistro(){
+	// Crear la cadena
+	stringstream datos;
+	datos << regActual.nombre << "|" << regActual.practica1 << "|" << regActual.practica2;
+	datos << regActual.practica3 << "|" << regActual.practica4 << "|" << regActual.promPracticas;
+	datos << regActual.examenFinal << "|" << regActual.promFinal << "|" << regActual.estado;
+	// Agregar linea al archivo
+	ofstream archivo;
+	archivo.open(nombArchivo,ios::app);
+	archivo << datos.str() << endl;
+	archivo.close();
+}
 
 // Menu de opciones
 void procMenu(){
@@ -45,26 +83,29 @@ void procRegistrarEstudiante(){
 	cout << "REGISTRAR ESTUDIANTE " << (contEstudiantes + 1) << endl;
 	cout << "============================================" << endl;	
 	// Lectura de Datos
-	cout << "Estudiante: "; cin >> lista[contEstudiantes].nombre;
-	cout << "Practica 1: "; cin >> lista[contEstudiantes].practica1;
-	cout << "Practica 2: "; cin >> lista[contEstudiantes].practica2;
-	cout << "Practica 3: "; cin >> lista[contEstudiantes].practica3;
-	cout << "Practica 4: "; cin >> lista[contEstudiantes].practica4;
-	cout << "Examen Final: "; cin >> lista[contEstudiantes].examenFinal;
+	cout << "Estudiante: "; cin >> regActual.nombre;
+	cout << "Practica 1: "; cin >> regActual.practica1;
+	cout << "Practica 2: "; cin >> regActual.practica2;
+	cout << "Practica 3: "; cin >> regActual.practica3;
+	cout << "Practica 4: "; cin >> regActual.practica4;
+	cout << "Examen Final: "; cin >> regActual.examenFinal;
 	// Proceso
-	lista[contEstudiantes].promPracticas = (lista[contEstudiantes].practica1 + 
-			lista[contEstudiantes].practica2 + lista[contEstudiantes].practica3 + 
-			lista[contEstudiantes].practica4)/4;
-	lista[contEstudiantes].promFinal = (lista[contEstudiantes].promPracticas + 
-			lista[contEstudiantes].examenFinal)/2;								
+	regActual.promPracticas = (regActual.practica1 + regActual.practica2 
+			+ regActual.practica3 + regActual.practica4)/4;
+	regActual.promFinal = (regActual.promPracticas + regActual.examenFinal)/2;	
+	regActual.estado = (regActual.promFinal>=12)?"Aprobado":"Desaprobado";
+	lista[contEstudiantes] = regActual;
 	// Reporte
 	cout << endl;
 	cout << "REPORTE ESTUDIANTE" << endl;
 	cout << "=================================" << endl;
-	cout << "Promedio de practicas: " << lista[contEstudiantes].promPracticas << endl;
-	cout << "Promedio final: " << lista[contEstudiantes].promFinal << endl;
+	cout << "Promedio de practicas: " << regActual.promPracticas << endl;
+	cout << "Promedio final: " << regActual.promFinal << endl;
+	cout << "Estado: " << regActual.estado << endl;
 	// Incrementar el contador
 	contEstudiantes++;
+	// Grabar el registro
+	grabarRegistro();
 }
 
 
