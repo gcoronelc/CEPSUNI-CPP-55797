@@ -1,2 +1,2 @@
-Gustavo|15|1718|20|1719|18|Aprobado
-Manuel|16|1910|15|1517|16|Aprobado
+Gustavo|15|17|18|20|17|19|18|Aprobado
+Manuel|16|19|10|15|15|17|16|Aprobado

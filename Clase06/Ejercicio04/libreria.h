@@ -1,6 +1,9 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <string.h>
+#include <cstdlib>
+#include <cstring>
 using namespace std;
 
 // Tipos
@@ -41,11 +44,51 @@ void crearArchivo(){
 
 // Proceso se encarga de leer el archivo y cargarloa al arreglo
 void leerArchivo(){
-
-	ofstream archivo;
+	// Variable
+	ifstream archivo;
+	string texto;
+	// Abrir el archivo en modo lectura
+	archivo.open(nombArchivo,ios::in);
+	// Validar
+	if(archivo.fail()){
+		return;
+	}
+	// Leer fila por fila
+	string registro[9];
+	while(!archivo.eof()){
+		// Obtener una fila
+		getline(archivo, texto);
+		if( texto.length() == 0 ){
+			continue;
+		}
+		// Desgregar la fila
+		int indice = 0, posicion;
+		while( texto.size() > 0){
+			posicion = texto.find(",");
+			if(posicion > 0){
+				registro[indice] = texto.substr(0, posicion);
+				texto.erase(0, posicion + 1);
+			} else {
+				registro[indice] = texto;
+				texto = "";
+			}
+			indice++;
+		}
+	}
+	// Pasar el registro al arreglo
+	lista[contEstudiantes].nombre = registro[0];
+	lista[contEstudiantes].practica1 = atoi(registro[1].c_str());
+	lista[contEstudiantes].practica2 = atoi(registro[2].c_str());
+	lista[contEstudiantes].practica3 = atoi(registro[3].c_str());
+	lista[contEstudiantes].practica4 = atoi(registro[4].c_str());
+	lista[contEstudiantes].promPracticas = atoi(registro[5].c_str());
+	lista[contEstudiantes].examenFinal = atoi(registro[6].c_str());
+	lista[contEstudiantes].promFinal = atoi(registro[7].c_str());
+	lista[contEstudiantes].estado = registro[8];
+	contEstudiantes++;
+	// Cerrar el archivo
+	archivo.close();
 	
-	// Grabar en archivo
-	archivo.open("datos.txt",ios::app);
 } 
 
 // Proceso agregar registro actual al archivo
@@ -65,7 +108,8 @@ void grabarRegistro(){
 // Menu de opciones
 void procMenu(){
 	do{
-		system("cls");
+		//system("cls");
+		cout << endl;
 		cout << "SISTEMA ACADEMICO" << endl;
 		cout << "============================================" << endl;
 		cout << "1.- Registro de estudiante y notas" << endl;

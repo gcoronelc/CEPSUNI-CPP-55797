@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <string.h>
 #include <windows.h>
 #include "libreria.h"
 using namespace std;
