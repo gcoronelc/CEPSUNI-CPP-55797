@@ -58,6 +58,7 @@ void leerArchivo(){
 	while(!archivo.eof()){
 		// Obtener una fila
 		getline(archivo, texto);
+		cout << texto << endl;
 		if( texto.length() == 0 ){
 			continue;
 		}
