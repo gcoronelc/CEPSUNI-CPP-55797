@@ -1,0 +1,4 @@
+Gustavo|15|17|18|20|17|19|18|Aprobado
+Manuel|16|19|10|15|15|17|16|Aprobado
+Karla|10|16|12|18|14|20|17|Aprobado
+Jaimito|10|9|8|10|9|12|10|Desaprobado
